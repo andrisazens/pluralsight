@@ -1,0 +1,4 @@
+javascript prototypes:
+ behaviour delegation not prototypical inheritance;
+ classical inheritance makes copy of object based on class blueprint (no linkage)
+ in javascript object has a link with "parent" object
