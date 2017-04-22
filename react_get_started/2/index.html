@@ -11,10 +11,23 @@
     <div id="root"></div>
     <script type="text/babel">
 
-        const Button = function(){
+        <!--const Button = function(props){
             return (
                 <button>{props.label}</button>
             );
+        }-->
+
+        class Button extends React.Component {
+            constructor(){
+                super();
+                this.state = {counter: 9}
+            }
+
+            render(){
+                return {
+                    <button>{this.state.counter}</button>
+                };
+            }
         }
 
         ReactDOM.render(

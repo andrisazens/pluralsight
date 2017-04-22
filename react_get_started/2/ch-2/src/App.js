@@ -2,7 +2,21 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const Button = function (props) {
+  return (
+    <button>{props.label}</button>
+  );
+}
+
 class App extends Component {
+  render(){
+    return (
+      <Button label="Do"></Button>
+    );
+  }
+}
+
+/*class App extends Component {
   render() {
     return (
       <div className="App">
@@ -16,6 +30,6 @@ class App extends Component {
       </div>
     );
   }
-}
+}*/
 
 export default App;
