@@ -11,22 +11,17 @@
     <div id="root"></div>
     <script type="text/babel">
 
-        <!--const Button = function(props){
-            return (
-                <button>{props.label}</button>
-            );
-        }-->
-
         class Button extends React.Component {
-            constructor(){
-                super();
-                this.state = {counter: 9}
-            }
+            //constructor(){
+            //    super();
+            //    this.state = {counter: 9}
+            //}
+            state = {counter: 9}
 
             render(){
-                return {
+                return (
                     <button>{this.state.counter}</button>
-                };
+                );
             }
         }
 
